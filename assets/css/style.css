@@ -12,6 +12,7 @@
 header{
   background-color: #9ACCEF;
   position: relative;
+  background-color: white;
 }
 .principal{
   height: 100vh;
@@ -38,7 +39,9 @@ h4{
 .icon-fondo{
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  position: absolute;
+  
 }
 /*.header-top{
   background-color: #E96F5F;
