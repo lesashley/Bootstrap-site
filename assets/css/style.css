@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 header{
-  background-color: #9ACCEF;
+  background-color: white;
   position: relative;
   background-color: white;
 }
@@ -36,12 +36,89 @@ h4{
   font-weight: bold;
   letter-spacing: 1.3px;
 }
+.icon{
+  position: absolute;
+}
 .icon-fondo{
   background-size: cover;
   width: 100%;
   height: 90vh;
   position: absolute;
-  
+}
+.size{
+  z-index: 1;
+}
+.icon--hero-park{
+  width: 260px;
+  height: 316px;
+  bottom: 16px;
+  left: -20%;
+}
+/*.icon--hero-bench{
+  width: 148px;
+  height: 66px;
+  bottom: 19px;
+  left: 88%;
+}*/
+.absolute{
+  width: 100%;
+  display: inline-block;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  left: 0;
+  background-position: right bottom;
+}
+.icon-bond{
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background-color: #FFCC66;
+  position: relative;
+}
+.icon-size{
+  background-size: contain;
+  display: inline-block;
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  left: 27px;
+  bottom: 15%;
+}
+.step-title{
+  color: #3498DB;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.step-content{
+  font-size: 18px;
+  line-height: 2.4;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .step-content{
+    font-size: 1.3rem;
+    line-height: 1.9;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .step-title{
+    font-size: 3.3rem;
+    text-align: center;
+  }
+}
+.row-margin{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.color-white{
+  color: white;
+}
+
+.works{
+  background-color: #F9F9F9;
 }
 /*.header-top{
   background-color: #E96F5F;
@@ -59,9 +136,6 @@ header{
   width: 90px!important;
   border: 0;
 }*/
-.color-white{
-  color: white;
-}
 /*.navbar a{
   font-weight: 600;
 }
