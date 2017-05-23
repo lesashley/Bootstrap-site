@@ -37,7 +37,7 @@ h4{
   letter-spacing: 1.3px;
 }
 .icon{
-  position: absolute;
+  /*position: absolute;*/
 }
 .icon-fondo{
   background-size: cover;
@@ -119,6 +119,35 @@ h4{
 
 .works{
   background-color: #F9F9F9;
+}
+.promise{
+
+}
+.promise h1{
+  color: #3498DB;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.promise h4{
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.icon-toggle{
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+.toggle h5{
+  color: #87B460;
+  font-weight: bold;
+  font-size: 1.8rem;
+  /*display: inline-block;*/
+}
+@media screen and (max-width: 768px) {
+  .icon-toggle{
+    width: 50px;
+    height: 50px;
+  }
 }
 /*.header-top{
   background-color: #E96F5F;
