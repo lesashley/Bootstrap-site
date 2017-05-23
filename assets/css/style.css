@@ -13,16 +13,86 @@ header{
   background-color: white;
   position: relative;
   background-color: white;
+  width: 100%;
+}
+.red{
+  background-color: #ED7161;
+  width: 100%;
+  /*height: 50px;*/
+}
+.icon-close{
+  margin-right: 0;
+  height: 20px;
+  width: 20px;
+  background-position: center;
+}
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
 }
 .principal{
-  height: 100vh;
-  flex-wrap: wrap;
-  display: flex;
+  /*height: 100vh;*/
+}
+.content{
+  position: relative;
+  height: 720px;
+}
+.principal h2{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 5.9rem;
+}
+.row{
+  width: 100%;
+}
+.h4{
+  font-weight: bold;
+  font-size: 2.4rem;
 }
 h4{
   line-height: 1.5;
 }
+.menu{
+  padding-top: 30px;
+}
+.menu ul{
+  display: inline-block;
+}
+.no-style li{
+  list-style-type: none;
+  display: inline-block;
+}
+.menu ul:nth-child(2) li{
+  padding-top: 10px;
+  margin-left: 0;
+  padding-right: 50px;
+}
 
+.menu ul li span:nth-child(1){
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  margin-right: 5px;
+}
+.menu ul li i{
+  display: inline-block;
+  left: 25%;
+  padding-right: 10px;
+}
+.menu ul li a{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.menu ul li img{
+  width: 90px;
+  height: 45px;
+}
 .logo-mobile{
   width: 120px;
   height: 60px;
@@ -36,13 +106,10 @@ h4{
   font-weight: bold;
   letter-spacing: 1.3px;
 }
-.icon{
-  /*position: absolute;*/
-}
 .icon-fondo{
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  /*height: 90vh;*/
   position: absolute;
 }
 .size{
@@ -52,18 +119,30 @@ h4{
   width: 260px;
   height: 316px;
   bottom: 16px;
-  left: -20%;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  /*left: -20%;*/
 }
-/*.icon--hero-bench{
+.icon--hero-bench{
+  position: absolute;
   width: 148px;
   height: 66px;
-  bottom: 19px;
-  left: 88%;
-}*/
+  bottom: 10%;
+  right: 20%;
+}
+.icon--hero{
+  position: absolute;
+  width: 100%;
+  height: 780px;
+  background-position: center;
+  top: -14%;
+  /*left: 10%;*/
+}
 .absolute{
   width: 100%;
   display: inline-block;
-  height: 100vh;
+  height: 600px;
   position: absolute;
   background-size: cover;
   left: 0;
@@ -97,6 +176,9 @@ h4{
   font-weight: 600;
 }
 @media screen and (max-width: 768px) {
+  .h4{
+    font-size: 1.9rem;
+  }
   .step-content{
     font-size: 1.3rem;
     line-height: 1.9;
@@ -121,7 +203,8 @@ h4{
   background-color: #F9F9F9;
 }
 .promise{
-
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 .promise h1{
   color: #3498DB;
@@ -142,16 +225,6 @@ h4{
   font-weight: bold;
   font-size: 1.8rem;
   /*display: inline-block;*/
-}
-@media screen and (max-width: 768px) {
-  .icon-toggle{
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-  }
-  .box-1 p{
-    text-align: justify;
-  }
 }
 .icon-accordion{
   float: right;
@@ -209,8 +282,11 @@ h4{
   -ms-transform: rotate(-5deg);
       -webkit-transform: rotate(-5deg);
       transform: rotate(-5deg);
+  left: 1%;
+  backface-visibility: hidden;
 }
 .rotate2{
+  left: 1%;
   -ms-transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
@@ -219,6 +295,7 @@ h4{
       -webkit-transform: rotate(5deg);
       transform: rotate(5deg);
   transition: all 0.4s ease;
+      backface-visibility: hidden;
 }
 .rotate2:hover{
   -ms-transform: rotate(8deg);
@@ -238,6 +315,16 @@ h4{
 .cleaning{
   background-color: #3498DB;
   padding-top: 200px;
+}
+.cleaning h1{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.cleaning h5{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.3rem;
 }
 .list{
   display: block;
@@ -291,3 +378,20 @@ header{
   width: 20px;
   background-position: center;
 }*/
+
+@media screen and (max-width: 768px) {
+  .icon-toggle{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+  }
+  .box-1 p{
+    text-align: justify;
+  }
+  .rotate2{
+    width: 162px;
+  }
+  .rotate1{
+    width: 162px;
+  }
+}
